@@ -1,0 +1,78 @@
+/* =========================================================
+   PÁGINA DE DETALHES
+   ========================================================= */
+
+.anime-details {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.anime-cover img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.anime-description h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.anime-description p {
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.anime-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.external-links {
+    margin-top: 40px;
+}
+
+.external-links a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 15px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.external-links a:hover {
+    background: #e50914;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .anime-details {
+        grid-template-columns: 1fr;
+    }
+
+    .anime-cover {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .anime-description h1 {
+        font-size: 30px;
+    }
+
+}
