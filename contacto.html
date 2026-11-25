@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — AnimesMZ</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/anime.css">
+</head>
+<body>
+<header></header>
+
+<main>
+  <div class="page-container">
+    <h1>Contacto</h1>
+    <p>Tens sugestões de animes, mangás ou webtoons? Encontraste um erro? Fala connosco!</p>
+
+    <div class="contact-form">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="O teu nome">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="o.teu@email.com">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" rows="5" placeholder="Escreve aqui a tua mensagem..."></textarea>
+
+      <button class="btn-primary-anime" onclick="enviarMensagem()">Enviar Mensagem</button>
+    </div>
+  </div>
+</main>
+<script>
+function enviarMensagem() {
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const msg = document.getElementById('mensagem').value.trim();
+  if (!nome || !email || !msg) {
+    alert('Por favor preenche todos os campos.');
+    return;
+  }
+  alert('Obrigado, ' + nome + '! Mensagem recebida. Responderemos em breve.');
+}
+</script>
+
+<footer>
+  <p>© 2026 <strong>AnimesMZ</strong> · Feito com ❤️ em Moçambique · <a href="contacto.html">Contacto</a></p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>
